@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang=en-us>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body ng-app="testit">
+    <ul ng-controller="OverallCtrl">
+      <li ng-class="{ active: isActive('/hello')}"><a href="#/hello">Hello</a></li>
+      <li ng-class="{ active: isActive('/world')}"><a href="#/world">World</a></li>
+    </ul>
+   
+    <div ng-view></div>
+    <script type="text/javascript" src="lib/angular.js"></script>
+    <script type="text/javascript" src="lib/angular-route.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
