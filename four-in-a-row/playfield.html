@@ -1,0 +1,7 @@
+<table class="table">
+  <tr ng-repeat="row in arena track by $index">
+    <td ng-repeat="cell in row track by $index" ng-click="selectedCell($index, $parent.$index)">
+      [ {{cell}} ]
+    </td>
+  </tr>
+</table>
